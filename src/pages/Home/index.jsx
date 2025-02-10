@@ -3,58 +3,14 @@ import Button from "../../components/ui/Button";
 import Card from "../../components/ui/Card";
 import CardContent from "../../components/ui/CardContent";
 import BlurrCard from "../../components/ui/BlurrCard";
-//logos
-import pwe from "../../assets/logos/pwe.webp";
-import kpmg from "../../assets/logos/kpmg.webp";
-import oval from "../../assets/logos/oval.webp";
-import homeFarm from "../../assets/logos/home-farm.webp";
-import cooperEstate from "../../assets/logos/CooperEstates.webp";
-import retailSol from "../../assets/logos/retail-solutions.webp";
-//features
-import clock from "../../assets/features/clock.webp";
-import graph from "../../assets/features/graph.webp";
-import mobile from "../../assets/features/mobile.webp";
-import note from "../../assets/features/note.webp";
-import notification from "../../assets/features/notification.webp";
+
 import { FaMoon, FaSun } from "react-icons/fa";
+import { featuresImg, logos } from "../../helpers/data";
+
+import mobile from "/images/assets/features/mobile.webp";
 
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false);
-
-  const logos = [
-    { alt: "KPMG", image: kpmg },
-    { alt: "Cooper Estate", image: cooperEstate },
-    { alt: "Oval", image: oval },
-    { alt: "PwC", image: pwe },
-    { alt: "Retail Solutions", image: retailSol },
-    { alt: "Home Farm", image: homeFarm },
-  ];
-
-  const featuresImg = [
-    {
-      title: "Real-time results",
-      description:
-        "Real-time information on UK companies entering administration.",
-      image: clock,
-    },
-    {
-      title: "Financial data",
-      description:
-        "Company financial data, including turnover, profit and trading history.",
-      image: graph,
-    },
-    {
-      title: "Information Library",
-      description:
-        "An ever-expanding library of information, interviews, and advice.",
-      image: note,
-    },
-    {
-      title: "Direct contact",
-      description: "Direct contact details for administrators across the UK.",
-      image: notification,
-    },
-  ];
 
   return (
     <div className={`${darkMode ? "dark" : ""} relative`}>
@@ -146,7 +102,7 @@ const Home = () => {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url(src/assets/features/alley.webp)",
+              backgroundImage: "url(/images/assets/features/alley.webp)",
             }}
           ></div>
           <div className="relative z-10 md:mb-[33px] pt-12">
@@ -169,7 +125,7 @@ const Home = () => {
                     height={40}
                     loading="lazy"
                     src={feature?.image}
-                    alt={`${feature?.title} logo`}
+                    alt={feature?.title}
                     className="mb-[31px]"
                   />{" "}
                   <h3 className="md:text-xl font-bold text-[#52B5E6] md:mb-1">
@@ -190,7 +146,7 @@ const Home = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url(src/assets/testimonial/blurr.webp)",
+            backgroundImage: "url(/images/assets/testimonial/blurr.webp)",
           }}
         ></div>
         <div className="grid md:gap-60 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 justify-between items-center relative z-10 h-full w-full">
@@ -233,7 +189,7 @@ const Home = () => {
             <div
               className="absolute inset-0 bg-cover md:flex hidden bg-center w-[1130px] h-[846px] left-[-40px]"
               style={{
-                backgroundImage: "url(src/assets/book.webp)",
+                backgroundImage: "url(/images/assets/book.webp)",
               }}
             />
           </div>
