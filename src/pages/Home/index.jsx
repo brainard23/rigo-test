@@ -60,7 +60,7 @@ const Home = () => {
     <div className={`${darkMode ? "dark" : ""} relative`}>
       <div className="text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 min-h-screen">
         {/* Dark Mode Toggle Button */}
-        <div className="absolute z-10 p-4 flex justify-end right-0">
+        <div className="absolute z-50 p-4 flex justify-end right-0">
           <button
             className="px-4 py-2 bg-gray-800 text-white rounded-md focus:outline-none dark:bg-gray-200 dark:text-black"
             onClick={() => setDarkMode(!darkMode)}
@@ -238,15 +238,15 @@ const Home = () => {
             />
           </div>
           <div className="relative z-10 mt-[167px] p-1">
-            <h2 className="text-3xl font-bold mb-6">What's Included</h2>
+            <h2 className="text-3xl font-bold mb-6 dark:text-black">What's Included</h2>
             <div className="md:w-[413px] md:mr-36">
-              <p className="md:font-extralight md:text-[16px] mb-8">
+              <p className="md:font-extralight md:text-[16px] mb-8 dark:text-black">
                 Unlock the secrets to profitable distressed acquisitions today!
                 Gain invaluable knowledge about market trends and industry
                 insights with our Ultimate Guide. Here’s a brief outline of what
                 it covers:
               </p>
-              <ul className="relative z-10 list-disc list-inside text-left md:font-extralight md:text-[16px]">
+              <ul className="relative z-10 list-disc list-inside text-left md:font-extralight md:text-[16px] dark:text-black">
                 <li>
                   The strategy of buying an operational business below market
                   value
