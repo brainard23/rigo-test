@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@tailwind utilities;
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --max-width: 1400px;
+  --page-padding: 1rem; 
+  font-family: 'DM Sans', sans-serif;
+}
+
+.container {
+  margin: 0;
+  font-family:  "DM Sans", serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: '#fffff';
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--page-padding);
+}
+
+.body {
+  background-color: '#fffff';
+
+}
